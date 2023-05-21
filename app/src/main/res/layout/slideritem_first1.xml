@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="imageSliderSliderwelcomeModel" type="com.toylysapplication.app.modules.first.data.model.ImageSliderSliderwelcomeModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSlide"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtWelcome"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{imageSliderSliderwelcomeModel.txtWelcome}"
+            style="@style/txtPoppinsbold36" tools:text="@string/lbl_welcome"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtMaricobaaplik"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{imageSliderSliderwelcomeModel.txtMaricobaaplik}"
+            style="@style/txtRobotomedium14" tools:text="@string/msg_mari_coba_aplik"/>
+        <ImageView android:id="@+id/imageIllustrationFi"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_175pxh"
+            android:layout_marginBottom="@dimen/_61pxv"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_107pxv"
+            android:layout_width="@dimen/_239pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_illustrationfi"
+            imageUrl="@{imageSliderSliderwelcomeModel.imageIllustrationFi}"
+            placeHolder="@{@drawable/img_illustrationfi}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_illustrationfi"/>
+    </LinearLayout>
+</layout>

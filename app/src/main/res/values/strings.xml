@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">toyly_s_application5</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_continue">Continue</string>
+<string name="lbl_i">i</string>
+<string name="lbl_game">Game</string>
+<string name="lbl_17_agustus_2022">17 Agustus 2022</string>
+<string name="lbl_favorite">Favorite</string>
+<string name="lbl_843_000">843.000</string>
+<string name="lbl_rp">Rp</string>
+<string name="lbl_o">o</string>
+<string name="lbl_total_payment">Total Payment</string>
+<string name="lbl_100_000">100.000</string>
+<string name="msg_thank_you_for_m">Thank you for making payment </string>
+<string name="msg_resend_otp_agai2">Resend OTP Again in </string>
+<string name="msg_pilihan_berhasi">Pilihan berhasil</string>
+<string name="lbl_x">X</string>
+<string name="lbl_tranfer">Tranfer</string>
+<string name="lbl_wallet">Wallet</string>
+<string name="msg_please_enter_ot">Please Enter
+OTP Verification</string>
+<string name="lbl_rent_history">Rent History</string>
+<string name="lbl_phone_number">Phone Number</string>
+<string name="lbl_admin_fee">Admin Fee</string>
+<string name="lbl_balance">Balance</string>
+<string name="msg_265614813719328">2656148137193283627-236456</string>
+<string name="lbl_1_bulan">1 bulan</string>
+<string name="lbl_1_500_000">1.500.000</string>
+<string name="lbl_bye">Bye!</string>
+<string name="lbl_credit">Credit</string>
+<string name="msg_resend_otp_agai">Resend OTP Again in 00:30</string>
+<string name="msg_scan_for_paymen">Scan For Payment</string>
+<string name="msg_10_09_22_10_10">10 .09.22-10.10.22</string>
+<string name="lbl_get_started">Get Started</string>
+<string name="msg_transaction_det">Transaction Detail</string>
+<string name="lbl_motor">Motor</string>
+<string name="lbl_843_000_rp">843.000 (Rp)</string>
+<string name="lbl_hello">Hello!</string>
+<string name="lbl_top_up">Top Up</string>
+<string name="lbl_500_000">500.000</string>
+<string name="lbl_00_30">00:30</string>
+<string name="msg_motor_honda_del2">Motor Honda
+Delivery
+</string>
+<string name="msg_choose_your_mot">Choose Your Motor</string>
+<string name="lbl_1_hari">1 hari</string>
+<string name="lbl_toyly">Toyly</string>
+<string name="lbl_feature">Feature</string>
+<string name="lbl_sign_out">Sign Out</string>
+<string name="lbl_bsi_mobile">BSI mobile</string>
+<string name="msg_upgrade_to_prem">Upgrade to premium,
+get more profit now!</string>
+<string name="lbl_6">6</string>
+<string name="lbl_resend_otp">Resend OTP</string>
+<string name="lbl_payment_method">Payment method</string>
+<string name="msg_04_01_23_04_02">04.01.23-04.02.23</string>
+<string name="msg_otp_verificatio">OTP Verification</string>
+<string name="lbl_motor_2">Motor #2</string>
+<string name="lbl_motor_1">Motor #1</string>
+<string name="lbl_id_62">ID +62</string>
+<string name="lbl_barcode">Barcode</string>
+<string name="lbl_special_promo">Special Promo</string>
+<string name="lbl_sewa">Sewa</string>
+<string name="msg_another_payment">Another Payment Methods</string>
+<string name="lbl_view_all">View all</string>
+<string name="lbl_qr_code">QR Code</string>
+<string name="lbl_2_minggu">2 minggu</string>
+<string name="lbl_mobile_prepaid">Mobile
+Prepaid</string>
+<string name="lbl_1_minggu">1 minggu</string>
+<string name="lbl_welcome">Welcome</string>
+<string name="msg_mari_coba_aplik">Mari coba aplikasi kita !</string>
+<string name="lbl_900_000">900.000</string>
+<string name="lbl_more">More</string>
+<string name="lbl_bills">Bills</string>
+<string name="lbl_ok">OK</string>
+<string name="lbl_motor_8">Motor #8</string>
+<string name="lbl_motor_7">Motor #7</string>
+<string name="lbl_password">Password</string>
+<string name="lbl_motor_6">Motor #6</string>
+<string name="lbl_motor_5">Motor #5</string>
+<string name="lbl_motor_4">Motor #4</string>
+<string name="lbl_motor_3">Motor #3</string>
+<string name="lbl_payment_success">Payment Success</string>
+<string name="msg_motor_honda_del">Motor Honda
+Delivery
+Admin Fee</string>
+<string name="msg_toylyashyyev_gm">toylyashyyev@gmail.com</string>
+<string name="msg_enter_new_passw">Enter New Password</string>
+<string name="lbl_fingerprint">Fingerprint</string>
+<string name="lbl_internet">Internet</string>
+<string name="msg_enter_phone_num">Enter Phone Number</string>
+<string name="lbl_mail">Mail</string>
+<string name="lbl_view_all2">View All</string>
+<string name="msg_if_you_need_pri">If you need price payment details,
+please scan the barcode below</string>
+<string name="lbl_harga_sewa">Harga sewa</string>
+<string name="lbl_full_name">Full Name</string>
+<string name="lbl_go_premium">Go Premium</string>
+<string name="msg_please_enter_valid_pa">Please enter valid password</string>
+<string name="msg_please_enter_valid_phone_nu">Please enter valid phone number</string>
+</resources>

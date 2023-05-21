@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homeOneVM" type="com.toylysapplication.app.modules.homeone.data.viewmodel.HomeOneVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameHomeOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnnotification"
+            android:layout_gravity="bottom|start"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:gravity="center_horizontal"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearUp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumnhello"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.93"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtHello"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{homeOneVM.homeOneModel.txtHello}"
+                            style="@style/txtPoppinsbold18_1" tools:text="@string/lbl_hello"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtToyly"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{homeOneVM.homeOneModel.txtToyly}"
+                            style="@style/txtPoppinsmedium14_2" tools:text="@string/lbl_toyly"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imageNotification"
+                        android:layout_height="@dimen/_25pxh"
+                        android:layout_marginBottom="@dimen/_15pxv"
+                        android:layout_marginTop="@dimen/_9pxv"
+                        android:layout_width="@dimen/_25pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_notification"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_notification"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <FrameLayout android:id="@+id/framePoster"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_106pxv"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_28pxv" android:layout_width="@dimen/_354pxh">
+                <FrameLayout
+                    android:id="@+id/frameStackrectanglethirtyseven"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_100pxv"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_354pxh" style="@style/groupStylegreen_A400cornerRadius">
+                    <ImageView
+                        android:id="@+id/imageRectangleThirtySeven"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_77pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle37"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle37"/>
+                    <LinearLayout
+                        android:id="@+id/linearColumngopremium"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_17pxv"
+                        android:layout_marginEnd="@dimen/_26pxh"
+                        android:layout_marginStart="@dimen/_26pxh"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_width="wrap_content" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtGoPremium"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{homeOneVM.homeOneModel.txtGoPremium}"
+                            style="@style/txtPoppinsbold18_2" tools:text="@string/lbl_go_premium"/>
+                        <TextView android:id="@+id/txtUpgradetoprem"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="@{homeOneVM.homeOneModel.txtUpgradetoprem}"
+                            style="@style/txtRobotoregular14" tools:text="@string/msg_upgrade_to_prem"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/framePict"
+                    android:layout_gravity="end"
+                    android:layout_height="@dimen/_106pxv"
+                    android:layout_marginEnd="@dimen/_23pxh"
+                    android:layout_marginStart="@dimen/_23pxh" android:layout_width="@dimen/_93pxh">
+                    <ImageView android:id="@+id/imageRegistorlogin"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_82pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_width="@dimen/_38pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_registorlogin"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_registorlogin"/>
+                    <ImageView android:id="@+id/imagePngItem1747424"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_106pxh"
+                        android:layout_width="@dimen/_93pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_pngitem1747424}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_pngitem1747424"/>
+                </FrameLayout>
+                <LinearLayout android:id="@+id/linearHias"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginEnd="@dimen/_35pxh"
+                    android:layout_marginStart="@dimen/_35pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="wrap_content" android:orientation="vertical">
+                    <LinearLayout android:id="@+id/linearRowx"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5pxh"
+                        android:layout_marginStart="@dimen/_4pxh"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtX"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_16pxv"
+                            android:layout_weight="0.23"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{homeOneVM.homeOneModel.txtX}"
+                            style="@style/txtComicNeueregular4" tools:text="@string/lbl_x"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtXOne"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_80pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_weight="0.77"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{homeOneVM.homeOneModel.txtXOne}"
+                            style="@style/txtComicNeueregular14" tools:text="@string/lbl_x"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linearRowo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_26pxv"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtO"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8pxv"
+                            android:layout_weight="0.72"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{homeOneVM.homeOneModel.txtO}"
+                            style="@style/txtComicNeueregular24" tools:text="@string/lbl_o"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtOOne"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_25pxv"
+                            android:layout_marginStart="@dimen/_84pxh"
+                            android:layout_weight="0.28"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{homeOneVM.homeOneModel.txtOOne}"
+                            style="@style/txtComicNeueregular9" tools:text="@string/lbl_o"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtFeature"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_30pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{homeOneVM.homeOneModel.txtFeature}"
+                style="@style/txtPoppinsbold18_1" tools:text="@string/lbl_feature"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="center_horizontal"
+                android:id="@+id/recyclerHomeOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_18pxh}" tools:itemCount="2" tools:listitem="@layout/row_home_one"/>
+            <LinearLayout android:id="@+id/linearTitle3"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_46pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSpecialPromo"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.77"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{homeOneVM.homeOneModel.txtSpecialPromo}"
+                    style="@style/txtPoppinsbold18_1" tools:text="@string/lbl_special_promo"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtViewall"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginStart="@dimen/_184pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_weight="0.23"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{homeOneVM.homeOneModel.txtViewall}"
+                    style="@style/txtRobotoregular12_2" tools:text="@string/lbl_view_all"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowigpostpromo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageIGPOSTPROMO"
+                    android:layout_height="@dimen/_142pxh"
+                    android:layout_width="@dimen/_135pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_igpostpromo}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_igpostpromo"/>
+                <ImageView android:id="@+id/imageDownloadOne"
+                    android:layout_height="@dimen/_142pxh"
+                    android:layout_marginStart="@dimen/_54pxh"
+                    android:layout_width="@dimen/_140pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_download1}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_download1"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/frameButtonnavigati"
+                android:layout_height="@dimen/_122pxv" android:layout_width="match_parent">
+                <View android:background="@color/white_A700"
+                    android:id="@+id/viewRectangleFifty"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_97pxv"
+                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_414pxh"/>
+                <View
+                    android:background="@drawable/rectangle_bg_green_a400_border_white_a700_radius_25"
+                    android:id="@+id/viewEllipseThirteen"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_50pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_72pxh"
+                    android:layout_marginStart="@dimen/_72pxh" android:layout_width="@dimen/_50pxh"/>
+                <ImageView android:id="@+id/imageFrameThree"
+                    android:layout_gravity="top|center"
+                    android:layout_height="@dimen/_49pxh"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginEnd="@dimen/_87pxh"
+                    android:layout_marginStart="@dimen/_87pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_width="@dimen/_240pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_frame3"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_frame3"/>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

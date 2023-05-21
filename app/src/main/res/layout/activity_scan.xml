@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="scanVM" type="com.toylysapplication.app.modules.scan.data.viewmodel.ScanVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearScan"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegreen_A400">
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal" android:id="@+id/txtBye"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_166pxh"
+            android:layout_marginStart="@dimen/_166pxh"
+            android:layout_marginTop="@dimen/_425pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{scanVM.scanModel.txtBye}"
+            style="@style/txtPoppinsbold36_1" tools:text="@string/lbl_bye"/>
+    </LinearLayout>
+</layout>

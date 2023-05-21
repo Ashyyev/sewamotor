@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="otpVM" type="com.toylysapplication.app.modules.otp.data.viewmodel.OtpVM"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearOTP"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_37pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearUp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageArrowleft"
+                    android:layout_height="@dimen/_11pxh"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="@dimen/_11pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowleft"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtOTPVerificatio"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_89pxh"
+                    android:layout_weight="0.93"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{otpVM.otpModel.txtOTPVerificatio}"
+                    style="@style/txtPoppinsbold18" tools:text="@string/msg_otp_verificatio"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <TextView android:id="@+id/txtPleaseEnterOT"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_27pxv"
+            android:layout_width="wrap_content"
+            android:text="@{otpVM.otpModel.txtPleaseEnterOT}"
+            style="@style/txtPoppinsbold24" tools:text="@string/msg_please_enter_ot"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtResendOTPAgai"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{otpVM.otpModel.txtResendOTPAgai}"
+            style="@style/txtRobotoregular12_1" tools:text="@string/msg_resend_otp_agai"/>
+        <FrameLayout android:id="@+id/frameBatang"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_50pxv"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_28pxv" android:layout_width="@dimen/_245pxh">
+            <com.mukesh.OtpView android:focusableInTouchMode="true"
+                android:id="@+id/otpViewOtpview"
+                android:inputType="number"
+                android:itemBackground="@color/gray_400_7f"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" app:OtpItemCount="4"
+                app:OtpItemHeight="@dimen/_50pxv"
+                app:OtpItemSpacing="@dimen/_15pxh"
+                app:OtpItemWidth="@dimen/_50pxh"
+                app:OtpLineColor="@android:color/transparent" app:OtpViewType="rectangle"/>
+            <LinearLayout android:id="@+id/linearOTP1"
+                android:layout_gravity="top|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_15pxh"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_5"
+                    android:id="@+id/viewEllipseSix"
+                    android:layout_height="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_16pxv"
+                    android:layout_marginTop="@dimen/_18pxv" android:layout_width="@dimen/_10pxh"/>
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_5"
+                    android:id="@+id/viewEllipseFive"
+                    android:layout_height="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_16pxv"
+                    android:layout_marginStart="@dimen/_55pxh"
+                    android:layout_marginTop="@dimen/_18pxv" android:layout_width="@dimen/_10pxh"/>
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_5"
+                    android:id="@+id/viewEllipseFour"
+                    android:layout_height="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_16pxv"
+                    android:layout_marginStart="@dimen/_55pxh"
+                    android:layout_marginTop="@dimen/_18pxv" android:layout_width="@dimen/_10pxh"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSix"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_50pxh"
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{otpVM.otpModel.txtSix}"
+                    style="@style/txtPoppinsbold30" tools:text="@string/lbl_6"/>
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtResendOTP"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_29pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{otpVM.otpModel.txtResendOTP}"
+            style="@style/txtRobotomedium14_1" tools:text="@string/lbl_resend_otp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnContinue"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_71pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_11pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_11pxv" android:singleLine="true"
+            android:text="@string/lbl_continue"
+            android:textAllCaps="false" style="@style/btnSolidRounded_1" tools:text="@string/lbl_continue"/>
+    </LinearLayout>
+</layout>
